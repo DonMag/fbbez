@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C94A1F31E9EA551009DB5A3 /* Shapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A1F21E9EA551009DB5A3 /* Shapes.m */; };
+		7C94A27B1E9EABB1009DB5A3 /* UIBezierPath_Boolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2691E9EABB1009DB5A3 /* UIBezierPath_Boolean.swift */; };
+		7C94A27C1E9EABB1009DB5A3 /* UIBezierPath_Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A26A1E9EABB1009DB5A3 /* UIBezierPath_Utilities.swift */; };
+		7C94A27D1E9EABB1009DB5A3 /* CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A26C1E9EABB1009DB5A3 /* CGPath.swift */; };
+		7C94A27E1E9EABB1009DB5A3 /* LRTBezierPathWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A26D1E9EABB1009DB5A3 /* LRTBezierPathWrapper.swift */; };
+		7C94A27F1E9EABB1009DB5A3 /* FBBezierContour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A26E1E9EABB1009DB5A3 /* FBBezierContour.swift */; };
+		7C94A2801E9EABB1009DB5A3 /* FBBezierCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A26F1E9EABB1009DB5A3 /* FBBezierCurve.swift */; };
+		7C94A2811E9EABB1009DB5A3 /* FBBezierCurve_Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2701E9EABB1009DB5A3 /* FBBezierCurve_Edge.swift */; };
+		7C94A2821E9EABB1009DB5A3 /* FBBezierGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2711E9EABB1009DB5A3 /* FBBezierGraph.swift */; };
+		7C94A2831E9EABB1009DB5A3 /* FBBezierIntersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2721E9EABB1009DB5A3 /* FBBezierIntersection.swift */; };
+		7C94A2841E9EABB1009DB5A3 /* FBBezierIntersectRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2731E9EABB1009DB5A3 /* FBBezierIntersectRange.swift */; };
+		7C94A2851E9EABB1009DB5A3 /* FBContourOverlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2741E9EABB1009DB5A3 /* FBContourOverlap.swift */; };
+		7C94A2861E9EABB1009DB5A3 /* FBCurveLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2751E9EABB1009DB5A3 /* FBCurveLocation.swift */; };
+		7C94A2871E9EABB1009DB5A3 /* FBEdgeCrossing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2761E9EABB1009DB5A3 /* FBEdgeCrossing.swift */; };
+		7C94A2881E9EABB1009DB5A3 /* FBEdgeOverlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2771E9EABB1009DB5A3 /* FBEdgeOverlap.swift */; };
+		7C94A2891E9EABB1009DB5A3 /* FBEdgeOverlapRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2781E9EABB1009DB5A3 /* FBEdgeOverlapRun.swift */; };
+		7C94A28A1E9EABB1009DB5A3 /* FBGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A2791E9EABB1009DB5A3 /* FBGeometry.swift */; };
+		7C94A28B1E9EABB1009DB5A3 /* Int_Extn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C94A27A1E9EABB1009DB5A3 /* Int_Extn.swift */; };
 		7CDB4D2C1E9D206500ABDAE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB4D2B1E9D206500ABDAE1 /* main.m */; };
 		7CDB4D2F1E9D206500ABDAE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB4D2E1E9D206500ABDAE1 /* AppDelegate.m */; };
 		7CDB4D321E9D206500ABDAE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB4D311E9D206500ABDAE1 /* ViewController.m */; };
@@ -20,6 +38,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C94A1F11E9EA551009DB5A3 /* Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shapes.h; sourceTree = "<group>"; };
+		7C94A1F21E9EA551009DB5A3 /* Shapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shapes.m; sourceTree = "<group>"; };
+		7C94A2691E9EABB1009DB5A3 /* UIBezierPath_Boolean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPath_Boolean.swift; sourceTree = "<group>"; };
+		7C94A26A1E9EABB1009DB5A3 /* UIBezierPath_Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPath_Utilities.swift; sourceTree = "<group>"; };
+		7C94A26C1E9EABB1009DB5A3 /* CGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPath.swift; sourceTree = "<group>"; };
+		7C94A26D1E9EABB1009DB5A3 /* LRTBezierPathWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRTBezierPathWrapper.swift; sourceTree = "<group>"; };
+		7C94A26E1E9EABB1009DB5A3 /* FBBezierContour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBBezierContour.swift; sourceTree = "<group>"; };
+		7C94A26F1E9EABB1009DB5A3 /* FBBezierCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBBezierCurve.swift; sourceTree = "<group>"; };
+		7C94A2701E9EABB1009DB5A3 /* FBBezierCurve_Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBBezierCurve_Edge.swift; sourceTree = "<group>"; };
+		7C94A2711E9EABB1009DB5A3 /* FBBezierGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBBezierGraph.swift; sourceTree = "<group>"; };
+		7C94A2721E9EABB1009DB5A3 /* FBBezierIntersection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBBezierIntersection.swift; sourceTree = "<group>"; };
+		7C94A2731E9EABB1009DB5A3 /* FBBezierIntersectRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBBezierIntersectRange.swift; sourceTree = "<group>"; };
+		7C94A2741E9EABB1009DB5A3 /* FBContourOverlap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBContourOverlap.swift; sourceTree = "<group>"; };
+		7C94A2751E9EABB1009DB5A3 /* FBCurveLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBCurveLocation.swift; sourceTree = "<group>"; };
+		7C94A2761E9EABB1009DB5A3 /* FBEdgeCrossing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBEdgeCrossing.swift; sourceTree = "<group>"; };
+		7C94A2771E9EABB1009DB5A3 /* FBEdgeOverlap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBEdgeOverlap.swift; sourceTree = "<group>"; };
+		7C94A2781E9EABB1009DB5A3 /* FBEdgeOverlapRun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBEdgeOverlapRun.swift; sourceTree = "<group>"; };
+		7C94A2791E9EABB1009DB5A3 /* FBGeometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBGeometry.swift; sourceTree = "<group>"; };
+		7C94A27A1E9EABB1009DB5A3 /* Int_Extn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int_Extn.swift; sourceTree = "<group>"; };
 		7CDB4D271E9D206500ABDAE1 /* OCfbbez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCfbbez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDB4D2B1E9D206500ABDAE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CDB4D2D1E9D206500ABDAE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,9 +88,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C94A2661E9EABB1009DB5A3 /* VecBoolSwift */ = {
+			isa = PBXGroup;
+			children = (
+				7C94A2671E9EABB1009DB5A3 /* VectorBoolean */,
+			);
+			path = VecBoolSwift;
+			sourceTree = "<group>";
+		};
+		7C94A2671E9EABB1009DB5A3 /* VectorBoolean */ = {
+			isa = PBXGroup;
+			children = (
+				7C94A2681E9EABB1009DB5A3 /* BezierExtensions */,
+				7C94A26B1E9EABB1009DB5A3 /* CGPathBridge */,
+				7C94A26E1E9EABB1009DB5A3 /* FBBezierContour.swift */,
+				7C94A26F1E9EABB1009DB5A3 /* FBBezierCurve.swift */,
+				7C94A2701E9EABB1009DB5A3 /* FBBezierCurve_Edge.swift */,
+				7C94A2711E9EABB1009DB5A3 /* FBBezierGraph.swift */,
+				7C94A2721E9EABB1009DB5A3 /* FBBezierIntersection.swift */,
+				7C94A2731E9EABB1009DB5A3 /* FBBezierIntersectRange.swift */,
+				7C94A2741E9EABB1009DB5A3 /* FBContourOverlap.swift */,
+				7C94A2751E9EABB1009DB5A3 /* FBCurveLocation.swift */,
+				7C94A2761E9EABB1009DB5A3 /* FBEdgeCrossing.swift */,
+				7C94A2771E9EABB1009DB5A3 /* FBEdgeOverlap.swift */,
+				7C94A2781E9EABB1009DB5A3 /* FBEdgeOverlapRun.swift */,
+				7C94A2791E9EABB1009DB5A3 /* FBGeometry.swift */,
+				7C94A27A1E9EABB1009DB5A3 /* Int_Extn.swift */,
+			);
+			path = VectorBoolean;
+			sourceTree = "<group>";
+		};
+		7C94A2681E9EABB1009DB5A3 /* BezierExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				7C94A2691E9EABB1009DB5A3 /* UIBezierPath_Boolean.swift */,
+				7C94A26A1E9EABB1009DB5A3 /* UIBezierPath_Utilities.swift */,
+			);
+			path = BezierExtensions;
+			sourceTree = "<group>";
+		};
+		7C94A26B1E9EABB1009DB5A3 /* CGPathBridge */ = {
+			isa = PBXGroup;
+			children = (
+				7C94A26C1E9EABB1009DB5A3 /* CGPath.swift */,
+				7C94A26D1E9EABB1009DB5A3 /* LRTBezierPathWrapper.swift */,
+			);
+			path = CGPathBridge;
+			sourceTree = "<group>";
+		};
 		7CDB4D1E1E9D206500ABDAE1 = {
 			isa = PBXGroup;
 			children = (
+				7C94A2661E9EABB1009DB5A3 /* VecBoolSwift */,
 				7CDB4D291E9D206500ABDAE1 /* OCfbbez */,
 				7CDB4D281E9D206500ABDAE1 /* Products */,
 			);
@@ -87,6 +173,8 @@
 				7CDB4D481E9D23AC00ABDAE1 /* BezierInterpView.m */,
 				7CDB4D4A1E9D242100ABDAE1 /* SmoothedBIView.h */,
 				7CDB4D4B1E9D242100ABDAE1 /* SmoothedBIView.m */,
+				7C94A1F11E9EA551009DB5A3 /* Shapes.h */,
+				7C94A1F21E9EA551009DB5A3 /* Shapes.m */,
 			);
 			path = OCfbbez;
 			sourceTree = "<group>";
@@ -130,6 +218,7 @@
 				TargetAttributes = {
 					7CDB4D261E9D206500ABDAE1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -170,13 +259,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C94A2801E9EABB1009DB5A3 /* FBBezierCurve.swift in Sources */,
+				7C94A2891E9EABB1009DB5A3 /* FBEdgeOverlapRun.swift in Sources */,
 				7CDB4D321E9D206500ABDAE1 /* ViewController.m in Sources */,
+				7C94A2861E9EABB1009DB5A3 /* FBCurveLocation.swift in Sources */,
 				7CDB4D461E9D235600ABDAE1 /* CachedLIView.m in Sources */,
+				7C94A27E1E9EABB1009DB5A3 /* LRTBezierPathWrapper.swift in Sources */,
 				7CDB4D431E9D20D900ABDAE1 /* LinearInterpView.m in Sources */,
 				7CDB4D2F1E9D206500ABDAE1 /* AppDelegate.m in Sources */,
+				7C94A2871E9EABB1009DB5A3 /* FBEdgeCrossing.swift in Sources */,
 				7CDB4D2C1E9D206500ABDAE1 /* main.m in Sources */,
+				7C94A2851E9EABB1009DB5A3 /* FBContourOverlap.swift in Sources */,
+				7C94A27F1E9EABB1009DB5A3 /* FBBezierContour.swift in Sources */,
+				7C94A2831E9EABB1009DB5A3 /* FBBezierIntersection.swift in Sources */,
 				7CDB4D491E9D23AC00ABDAE1 /* BezierInterpView.m in Sources */,
+				7C94A28B1E9EABB1009DB5A3 /* Int_Extn.swift in Sources */,
+				7C94A2821E9EABB1009DB5A3 /* FBBezierGraph.swift in Sources */,
+				7C94A28A1E9EABB1009DB5A3 /* FBGeometry.swift in Sources */,
+				7C94A2881E9EABB1009DB5A3 /* FBEdgeOverlap.swift in Sources */,
+				7C94A2811E9EABB1009DB5A3 /* FBBezierCurve_Edge.swift in Sources */,
+				7C94A27C1E9EABB1009DB5A3 /* UIBezierPath_Utilities.swift in Sources */,
 				7CDB4D4C1E9D242100ABDAE1 /* SmoothedBIView.m in Sources */,
+				7C94A27D1E9EABB1009DB5A3 /* CGPath.swift in Sources */,
+				7C94A27B1E9EABB1009DB5A3 /* UIBezierPath_Boolean.swift in Sources */,
+				7C94A2841E9EABB1009DB5A3 /* FBBezierIntersectRange.swift in Sources */,
+				7C94A1F31E9EA551009DB5A3 /* Shapes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,10 +403,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = OCfbbez/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DonMag.OCfbbez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -307,10 +416,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = OCfbbez/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DonMag.OCfbbez;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -333,6 +444,7 @@
 				7CDB4D401E9D206500ABDAE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

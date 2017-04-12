@@ -8,6 +8,8 @@
 
 #import "SmoothedBIView.h"
 
+
+
 @implementation SmoothedBIView
 {
 	UIBezierPath *path;
@@ -63,6 +65,8 @@
 	ctr = 0;
 	UITouch *touch = [touches anyObject];
 	pts[0] = [touch locationInView:self];
+
+	[path moveToPoint:pts[0]];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -75,7 +79,7 @@
 	{
 		pts[3] = CGPointMake((pts[2].x + pts[4].x)/2.0, (pts[2].y + pts[4].y)/2.0); // move the endpoint to the middle of the line joining the second control point of the first Bezier segment and the first control point of the second Bezier segment
 		
-		[path moveToPoint:pts[0]];
+//		[path moveToPoint:pts[0]];
 		[path addCurveToPoint:pts[3] controlPoint1:pts[1] controlPoint2:pts[2]]; // add a cubic Bezier from pt[0] to pt[3], with control points pt[1] and pt[2]
 		
 //		NSArray *a = [[NSArray alloc] initWithObjects:
@@ -106,10 +110,11 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+	[path closePath];
 	[self drawBitmap];
 	[self setNeedsDisplay];
 
-	NSLog(@"\n\n%@\n\n", [path description]);
+//	NSLog(@"\n\n%@\n\n", [path description]);
 	
 //	[self archiveArray:aPoints withName:@"testPoints"];
 //	[self archivePath:path withName:@"testpath"];
@@ -138,8 +143,28 @@
 	[[UIColor redColor] setFill];
 	[path fill];
 	
-	[[UIColor blackColor] setStroke];
+	[[UIColor blueColor] setStroke];
 	[path stroke];
+	
+	CGFloat thick = 16.0;
+	CGPathRef pathOutline = CGPathCreateCopyByStrokingPath([path CGPath], NULL, thick, kCGLineCapSquare, kCGLineJoinBevel, thick);
+	UIBezierPath *oPath = [UIBezierPath bezierPathWithCGPath:pathOutline];
+
+	[[UIColor yellowColor] setFill];
+	[oPath fill];
+	
+	UIBezierPath *uPath = [oPath fb_union:path];
+	CGAffineTransform move = CGAffineTransformMakeTranslation(0, 200);
+	
+	[uPath applyTransform:move];
+	
+	[[UIColor greenColor] setFill];
+	[uPath fill];
+	
+	[[UIColor purpleColor] setStroke];
+	[uPath stroke];
+
+	
 	incrementalImage = UIGraphicsGetImageFromCurrentImageContext();
 	UIGraphicsEndImageContext();
 }

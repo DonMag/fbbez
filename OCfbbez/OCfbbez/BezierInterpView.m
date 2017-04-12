@@ -41,6 +41,7 @@
 	ctr = 0;
 	UITouch *touch = [touches anyObject];
 	pts[0] = [touch locationInView:self];
+	[path moveToPoint:pts[0]];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
@@ -51,7 +52,7 @@
 	pts[ctr] = p;
 	if (ctr == 3) // 4th point
 	{
-		[path moveToPoint:pts[0]];
+//		[path moveToPoint:pts[0]];
 		[path addCurveToPoint:pts[3] controlPoint1:pts[1] controlPoint2:pts[2]]; // this is how a Bezier curve is appended to a path. We are adding a cubic Bezier from pt[0] to pt[3], with control points pt[1] and pt[2]
 		[self setNeedsDisplay];
 		pts[0] = [path currentPoint];
@@ -61,10 +62,11 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	
+	[path closePath];
 	[self drawBitmap];
 	[self setNeedsDisplay];
 	pts[0] = [path currentPoint]; // let the second endpoint of the current Bezier segment be the first one for the next Bezier segment
+	NSLog(@"\n\n%@\n\n", [path description]);
 	[path removeAllPoints];
 	ctr = 0;
 	
@@ -86,7 +88,32 @@
 		[rectpath fill];
 	}
 	[incrementalImage drawAtPoint:CGPointZero];
+	[[UIColor orangeColor] setFill];
+	[path fill];
 	[path stroke];
+	
+//	UIBezierPath *b = [UIBezierPath bezierPath];
+//	CGPoint pt = CGPointMake(100, 100);
+//	[b moveToPoint:pt];
+//	pt.x += 20;
+//	pt.y += 10;
+//	[b addLineToPoint:pt];
+//	pt.x += 40;
+//	pt.y += 40;
+//	[b addLineToPoint:pt];
+//	pt.x -= 20;
+//	pt.y += 20;
+//	[b addLineToPoint:pt];
+//	pt.x -= 30;
+//	pt.y -= 20;
+//	[b addLineToPoint:pt];
+//	[b closePath];
+//	[[UIColor yellowColor] setFill];
+//	[[UIColor redColor] setStroke];
+//	[b fill];
+//	[b stroke];
+	
+	
 	incrementalImage = UIGraphicsGetImageFromCurrentImageContext();
 	UIGraphicsEndImageContext();
 }
